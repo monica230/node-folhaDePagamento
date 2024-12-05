@@ -1,94 +1,74 @@
-# Sistema de Folha de Pagamento em Node.js
+Sistema de Gestão de Pagamentos em Node.js
+Bem-vindo ao Sistema de Gestão de Pagamentos, uma aplicação simples em Node.js que permite controlar os dados dos colaboradores, registrar as horas trabalhadas e calcular os salários mensais.
 
-Bem-vindo ao **Sistema de Folha de Pagamento**, um projeto simples em Node.js para gerenciar informações de funcionários, registrar horas trabalhadas e calcular a folha de pagamento mensal.
+Funcionalidades
+Cadastro de Colaboradores: Inclua novos colaboradores no sistema.
+Registro de Horas Trabalhadas: Registre as horas trabalhadas por cada colaborador.
+Consulta de Colaboradores: Visualize todos os colaboradores cadastrados no sistema.
+Cálculo de Remuneração Mensal: Calcule o salário mensal com base nas horas registradas.
+Relatório de Pagamento: Gere um relatório detalhado sobre os pagamentos realizados.
+Interação Simples: Interface via linha de comando (CLI) para fácil interação.
+Requisitos
+Node.js (versão 14 ou superior) instalado no seu computador.
+Como Instalar
+Clone este repositório:
 
-## Funcionalidades
+bash
+Copiar código
+git clone https://github.com/mrcomputer2018/node-folhaDePagamento
+cd folha-de-pagamento
+Instale as dependências necessárias:
 
-- **Cadastro de Funcionários**: Adicione novos funcionários ao sistema.
-- **Registro de Horas Trabalhadas**: Registre as horas trabalhadas por um funcionário.
-- **Listagem de Funcionários**: Visualize todos os funcionários cadastrados.
-- **Cálculo de Salário Mensal**: Calcule o salário mensal de um funcionário com base nas horas trabalhadas.
-- **Relatório de Pagamento**: Gere um relatório de pagamento detalhado.
-- **Interação Simples**: Interface em linha de comando (CLI) para uma interação fácil e direta.
+bash
+Copiar código
+npm install
+Verifique se os módulos Funcionario.js, Pagamento.js e Salario.js estão implementados corretamente.
 
-## Pré-requisitos
-
-- [Node.js](https://nodejs.org/) (versão 14 ou superior) instalado no sistema.
-
-## Instalação
-
-1. Clone este repositório:
-   ```bash
-   git clone https://github.com/mrcomputer2018/node-folhaDePagamento
-   cd folha-de-pagamento
-   ```
-
-2. Instale as dependências:
-   ```bash
-   npm install
-   ```
-
-3. Certifique-se de que os módulos `Funcionario.js`, `Pagamento.js` e `Salario.js` estão implementados corretamente.
-
-## Estrutura do Projeto
-
-```
+Estrutura do Projeto
+bash
+Copiar código
 src/
 │
-├── Funcionario.js       # Funções relacionadas ao gerenciamento de funcionários
-├── Pagamento.js         # Funções relacionadas ao pagamento e relatórios
+├── Funcionario.js       # Funções para gerenciamento de colaboradores
+├── Pagamento.js         # Funções para pagamentos e geração de relatórios
 ├── Salario.js           # Funções para cálculo de salários
-├── index.js             # Arquivo principal com a lógica de interação
+├── index.js             # Arquivo principal com a lógica da aplicação
 /
 ├── package.json         # Configuração do projeto e dependências
 └── README.md            # Documentação do projeto
-```
+Como Utilizar
+Inicie o sistema:
 
-## Como Usar
+bash
+Copiar código
+npm run start
+Selecione uma das opções disponíveis no menu principal:
 
-1. Execute o sistema:
-   ```bash
-   npm run start
-   ```
+1 - Adicionar Colaborador: Insira os dados necessários para registrar um novo colaborador.
+2 - Registrar Horas Trabalhadas: Informe o nome do colaborador e a quantidade de horas trabalhadas.
+3 - Exibir Colaboradores: Mostre a lista de colaboradores cadastrados.
+4 - Calcular Remuneração: Calcule o valor do salário mensal de um colaborador.
+5 - Gerar Relatório de Pagamento: Crie um relatório detalhado sobre os pagamentos.
+6 - Sair: Finalize o programa.
+Após cada operação, o sistema perguntará se você deseja continuar utilizando o sistema.
 
-2. Escolha uma das opções disponíveis no menu principal:
-   - **1 - Cadastrar Funcionário**: Insira os dados solicitados para adicionar um novo funcionário.
-   - **2 - Registrar Horas Trabalhadas**: Informe o nome do funcionário e a quantidade de horas trabalhadas.
-   - **3 - Listar Funcionários**: Exiba a lista de funcionários cadastrados.
-   - **4 - Calcular Folha de Pagamento**: Calcule o salário mensal de um funcionário.
-   - **5 - Imprimir Relatório de Pagamento**: Gere um relatório detalhado com os pagamentos.
-   - **6 - Sair**: Finalize o programa.
-
-3. Após cada operação, você será perguntado se deseja continuar no sistema.
-
-## Exemplo de Uso
-
-```bash
-Digite o número correspondente à opção desejada:
-1 - Cadastrar Funcionário
+Exemplo de Uso
+bash
+Copiar código
+Escolha a opção desejada:
+1 - Adicionar Colaborador
 2 - Registrar Horas Trabalhadas
-3 - Listar Funcionários
-4 - Calcular Folha de Pagamento
-5 - Imprimir Relatório de Pagamento
+3 - Exibir Colaboradores
+4 - Calcular Remuneração
+5 - Gerar Relatório de Pagamento
 6 - Sair
-```
+Como Contribuir
+Contribuições são bem-vindas! Para contribuir, siga os seguintes passos:
 
-## Contribuição
-
-Contribuições são bem-vindas! Siga os passos abaixo:
-
-1. Faça um fork do repositório.
-2. Crie uma branch para sua nova funcionalidade:
-   ```bash
-   git checkout -b minha-nova-funcionalidade
-   ```
-3. Realize suas alterações e faça commits.
-4. Envie um pull request.
-
-## Licença
-
-Este projeto é licenciado sob a [MIT License](LICENSE). Sinta-se à vontade para usá-lo e modificá-lo conforme suas necessidades.
-
----
-
-Divirta-se utilizando o Sistema de Folha de Pagamento! 🎉
+Faça um fork do repositório.
+Crie uma nova branch para sua funcionalidade:
+bash
+Copiar código
+git checkout -b minha-nova-funcionalidade
+Realize as modificações e faça commits.
+Envie um pull request.
